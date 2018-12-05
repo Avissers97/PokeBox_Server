@@ -16,10 +16,10 @@ const TrainerSchema = new Schema ({
         type: String,
         required: true
     },
-    pokemon: {
-        type: String,
-        required: true
-    }
+    pokemon: [{
+        type: Schema.Types.ObjectId,
+        ref: 'pokemon'
+    }]
 });
 
 const Trainer = mongoose.model('trainer', TrainerSchema);

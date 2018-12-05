@@ -8,13 +8,16 @@ routes.get('/', function(req, res){
     return res.json({Test : 'Server Online'});
 })
 
-//add user
+//add pokemon to trainer
+//routes.post('/:id/trainerController.AddPokemon');
+
+//add trainer
 //routes.post('/', trainerController.AddTrainer);
 
 //change password
 //routes.put('/:id', trainerController.ChangePassword);
 
-//delete user
+//delete trainer
 //routes.delete('/:id', trainerController.DeleteTrainer);
 
 //get specific trainer
